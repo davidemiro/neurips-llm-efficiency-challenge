@@ -13,7 +13,7 @@ COPY ./fast_api_requirements.txt fast_api_requirements.txt
 RUN pip install --no-cache-dir --upgrade -r fast_api_requirements.txt
 
 ENV HUGGINGFACE_TOKEN="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"
-ENV HUGGINGFACE_REPO="mirodavide/Mistral-dm"
+ENV HUGGINGFACE_REPO="mistralai/Mistral-7B-v0.1"
 
 # Copy over single file server
 COPY ./inference.py inference.py
